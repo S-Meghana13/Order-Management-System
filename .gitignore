@@ -1,0 +1,41 @@
+# 🧪 Node.js
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# ⚙️ dotenv and credentials
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# 📦 Dependency lock files (optional if using one lock manager)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 📄 Logs
+logs/
+*.log
+
+# ⛅ Cloudinary uploads / temp files (if stored locally before upload)
+uploads/
+
+# 🔥 OS-specific
+.DS_Store
+Thumbs.db
+
+# 💻 IDEs & editors
+.vscode/
+.idea/
+*.swp
+
+# 🛠 React build
+order-frontend/build/
+
+# 🛠 Express temp (if any file uploads or compiled files)
+order-service/uploads/
