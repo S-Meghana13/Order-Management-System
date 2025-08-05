@@ -11,6 +11,11 @@ app.use(express.json());
 app.use('/orders', orderRoutes);
 app.use('/api/auth', require('./routes/authRoutes'));
 
+app.get('/', (req, res) => {
+  res.send('Backend is running');
+});
+
+
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('MongoDB connected');

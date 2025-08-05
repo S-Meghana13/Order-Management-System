@@ -10,7 +10,7 @@ function OrderList() {
   useEffect(() => {
     const userEmail = localStorage.getItem('userEmail');
   
-    axios.get('http://localhost:5000/orders')
+    axios.get(`${process.env.REACT_APP_API_BASE_URL}/orders`)
       .then((res) => {
         const filtered = res.data.filter(order => order.customerEmail === userEmail);
         setOrders(filtered);

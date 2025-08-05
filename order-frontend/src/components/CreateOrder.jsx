@@ -34,7 +34,7 @@ function CreateOrder() {
     data.append('invoice', invoice);
 
     try {
-      await axios.post('http://localhost:5000/orders', data, {
+      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/orders`, data, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 

@@ -8,7 +8,7 @@ function OrderById() {
 
   const fetchOrder = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/orders/${orderId}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/orders/${orderId}`);
       setOrder(res.data);
     } catch (err) {
       alert('❌ Order not found');
