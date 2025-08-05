@@ -24,4 +24,9 @@
     color: #ffffff;
     border-color: #ffffff;
   }
+  @media (max-width: 767.98px) {
+    .vh-100 {
+      min-height: auto !important;
+    }
+  }
   
